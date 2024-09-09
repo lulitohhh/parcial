@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marco Polo Game</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="titulo">
+    <h1>Marco Polo Game</h1>
+  </div>
+    <div class="contenedor">
+      <input type="text" id="game-id" placeholder="Enter Game ID" />
+      <input type="text" id="player-id" placeholder="Enter Player ID" />
+      <div class="botones">
+        <button id="join-button">Entra al juego</button>
+        <button id="start-button">Iniciar juego</button>
+        <button id="marco-button" style="display: none;">Gritar Marco</button>
+        <button id="polo-button" style="display: none;">Gritar Polo</button>
+      </div>
+      <div id="data-container"></div>
+      <div id="error-message"></div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

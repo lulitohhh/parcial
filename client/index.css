@@ -1,0 +1,139 @@
+/* Archivo: index.css */
+
+/* Estilos básicos del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #030436; /* Color azul claro para el fondo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos del título */
+.titulo {
+    position: absolute; /* Posiciona el título fuera del flujo normal */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    width: 100%;
+    text-align: center;
+}
+
+.titulo h1 {
+    color: #cde1ff; /* Color azul oscuro para el título */
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Estilos del contenedor principal */
+.contenedor {
+    background-color: #659cc9; /* Color azul claro para el contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 80px; /* Ajusta el margen superior para dejar espacio para el título */
+}
+
+/* Animación para el contenedor */
+.contenedor:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bca2df; /* Color azul claro para el borde */
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #b9d9f3; /* Color azul más oscuro para el enfoque */
+    outline: none;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #1d0458; /* Color azul medio para los botones */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #0e0338; /* Color azul oscuro para el hover */
+    transform: translateY(-3px);
+}
+
+/* Efecto de animación para el botón 'Marco' */
+#marco-button {
+    background-color: #4ca8af; /* Color verde para el botón 'Marco' */
+}
+
+#marco-button:hover {
+    background-color: #56b4b0; /* Color verde oscuro para el hover */
+}
+
+/* Efecto de animación para el botón 'Polo' */
+#polo-button {
+    background-color: #1420c2; /* Color rojo para el botón 'Polo' */
+}
+
+#polo-button:hover {
+    background-color: #1517b8; /* Color rojo oscuro para el hover */
+}
+
+/* Estilos para el contenedor de datos */
+#data-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff; /* Color blanco para el contenedor de datos */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #201c1c;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de desvanecimiento para el contenedor de datos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para el mensaje de error */
+#error-message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fbe9e7; /* Color rojo claro para el fondo del mensaje de error */
+    border: 1px solid #fbe9e7; /* Color rojo claro para el borde */
+    border-radius: 4px;
+    color: #d32f2f; /* Color rojo oscuro para el texto */
+    font-size: 1rem;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Animación de sacudida para el mensaje de error */
+@keyframes shake {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
